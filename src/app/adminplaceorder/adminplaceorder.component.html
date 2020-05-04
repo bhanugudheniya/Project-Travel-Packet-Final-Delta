@@ -1,0 +1,18 @@
+<app-admindashboard></app-admindashboard>
+<br>
+
+<br>
+<h1 class="head col-lg-12 col-md-12 col-sm-12 " style="text-align: center; margin-top: 3%; text-decoration: #4285F4 underline overline; ">Placed Orders</h1>
+
+<div class="card col-lg-10 col-md-12 col-sm-12 offset-lg-1" style="width: 18rem; float: left; margin-bottom: 5%; background-color: #4285F4;" *ngFor="let obj of arr">
+    <!-- <img src="../../assets/Images/user.png" class="card-img-top" alt="..."> -->
+    <div class="card-body ">
+        <p scope="col"> Name : {{ obj.fromName}} <br> HouseNumber : {{obj.fromHouseNumber}} <br> Area : {{obj.fromArea}} <br> Street : {{obj.fromStreet}} <br> PinCode : {{obj.fromPinCode}} <br> Email : {{obj.fromEmail}} <br> PhoneNumber : {{obj.fromPhoneNumber}} <br> <br> Name : {{obj.toName}} <br> HouseNumber : {{obj.toHouseNumber}} <br> Area : {{obj.toArae}} <br> Street : {{obj.toStreet}} <br> PinCode : {{obj.toPinCode}} <br> Email : {{obj.toEmail}} <br> PhoneNumber: {{obj.toPhoneNumber}} <br> <br> ItemName : {{obj.itemName}} <br> itemSize : {{obj.itemSize}} <br> itemShape : {{obj.itemShape}} <br> itemWeight : {{obj.itemWeight}} <br>
+            <!-- <div style="float: left;">
+                <td><button class="btn btn-primary" type="submit" [routerLink]="['/update',obj._id]">Update</button></td>
+            </div>
+            <div>
+                <td><button class="btn btn-danger" type="submit" (click)="delData(obj._id)">Delete</button></td>
+            </div> -->
+    </div>
+</div>

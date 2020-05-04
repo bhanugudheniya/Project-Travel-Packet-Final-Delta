@@ -1,0 +1,131 @@
+<app-userdashboard></app-userdashboard>
+<!-- <br> <br> <br>  -->
+<div class="container col-lg-12 col-md-12 col-sm-12">
+  <h1 class="sendingHeading">Place Your Order</h1>
+</div>
+<div class="container-fluid formDiv col-lg-8 col-sm-10 col-md-10">
+<form>
+    <label class="subHead" style="font-size: large;" >FROM</label>
+    <hr class = "seprator">
+    <div class="form-group row">
+      <label for="fromName" class="col-sm-2 col-form-label">Name:</label>
+      <div class="col-sm-8">
+        <input type="text" [(ngModel)]="fromName" name="fromName" class="form-control">
+      </div>
+    </div>
+    <div class="form-group row">
+        <label for="fromHouseNumber" class="col-sm-2 col-form-label">House Number:</label>
+        <div class="col-sm-8">
+          <input type="text" [(ngModel)]="fromHouseNumber" name="fromHouseNumber" class="form-control">
+        </div>
+      </div>
+      <div class="form-group row">
+        <label for="fromArea" class="col-sm-2 col-form-label">Area:</label>
+        <div class="col-sm-8">
+          <input type="text" [(ngModel)]="fromArea" name="fromArea" class="form-control">
+        </div>
+      </div>
+      <div class="form-group row">
+        <label for="fromStreet" class="col-sm-2 col-form-label">Street:</label>
+        <div class="col-sm-8">
+          <input type="text" [(ngModel)]="fromStreet" name="fromStreet" class="form-control">
+        </div>
+      </div>
+      <div class="form-group row">
+        <label for="fromPinCode" class="col-sm-2 col-form-label">Pin Code:</label>
+        <div class="col-sm-8">
+          <input type="text" [(ngModel)]="fromPinCode" name="fromPinCode" class="form-control">
+        </div>
+      </div>
+    <div class="form-group row">
+      <label for="fromEmail" class="col-sm-2 col-form-label">Email Id:</label>
+      <div class="col-sm-8">
+        <input type="text" [(ngModel)]="fromEmail" name="fromEmail" class="form-control" >
+      </div>
+    </div>
+    <div class="form-group row">
+        <label for="fromPhoneNumber" class="col-sm-2 col-form-label">Phone Number:</label>
+        <div class="col-sm-8">
+          <input type="text" [(ngModel)]="fromPhoneNumber" name="fromPhoneNumber" class="form-control">
+        </div>
+      </div>
+      <hr class = "seprator">
+      <label style="font-size: large;" class="subHead">To</label>  
+      <hr class = "seprator">
+      <div class="form-group row">
+        <label for="toName" class="col-sm-2 col-form-label">Name:</label>
+        <div class="col-sm-8">
+          <input type="text" [(ngModel)]="toName" name="toName" class="form-control">
+        </div>
+      </div>
+      <div class="form-group row">
+          <label for="toHouseNumber" class="col-sm-2 col-form-label">House Number:</label>
+          <div class="col-sm-8">
+            <input type="text" [(ngModel)]="toHouseNumber" name="toHouseNumber" class="form-control">
+          </div>
+        </div>
+        <div class="form-group row">
+          <label for="toArea" class="col-sm-2 col-form-label">Area:</label>
+          <div class="col-sm-8">
+            <input type="text" [(ngModel)]="toArea" name="toArea" class="form-control">
+          </div>
+        </div>
+        <div class="form-group row">
+          <label for="toStreet" class="col-sm-2 col-form-label">Street:</label>
+          <div class="col-sm-8">
+            <input type="text" [(ngModel)]="toStreet" name="toStreet" class="form-control">
+          </div>
+        </div>
+        <div class="form-group row">
+          <label for="toPinCode" class="col-sm-2 col-form-label">Pin Code:</label>
+          <div class="col-sm-8">
+            <input type="text" [(ngModel)]="toPinCode" name="toPinCode" class="form-control">
+          </div>
+        </div>
+      <div class="form-group row">
+        <label for="toEmail" class="col-sm-2 col-form-label">Email Id:</label>
+        <div class="col-sm-8">
+          <input type="text" [(ngModel)]="toEmail" name="toEmail" class="form-control" >
+        </div>
+      </div>
+      <div class="form-group row">
+          <label for="toPhoneNumber" class="col-sm-2 col-form-label">Phone Number:</label>
+          <div class="col-sm-8">
+            <input type="text" [(ngModel)]="toPhoneNumber" name="toPhoneNumber" class="form-control">
+          </div>
+        </div>
+        <hr class = "seprator">
+        <label class="subHead" style="font-size: large;" >Item Description</label> 
+        <hr class = "seprator">
+        <div class="form-group row">
+            <label for="itemName" class="col-sm-2 col-form-label">Item Name:</label>
+            <div class="col-sm-8">
+              <input type="text" [(ngModel)]="itemName" name="itemName" class="form-control">
+            </div>
+          </div>  
+          <div class="form-group row">
+            <label for="itemSize" class="col-sm-2 col-form-label">Size(in centimeters):</label>
+            <div class="col-sm-8">
+              <input type="text" [(ngModel)]="itemSize" name="itemSize" class="form-control">
+            </div>
+          </div>   
+          <div class="form-group row">
+            <label for="itemShape" class="col-sm-2 col-form-label">Shape:</label>
+            <div class="col-sm-8">
+              <input type="text" [(ngModel)]="itemShape" name="itemShape" class="form-control">
+            </div>
+          </div>
+          <div class="form-group row">
+            <label for="itemWeight" class="col-sm-2 col-form-label">Weight(in Grams):</label>
+            <div class="col-sm-8">
+              <input type="text" [(ngModel)]="itemWeight" name="itemWeight" class="form-control">
+            </div>
+          </div>
+          <div class="text-center pt-2 pb-1">
+            <button style="border-radius:100px; width: 40%;" type="submit" (click)="addData()" class="btn btn-primary">SEND</button>
+          </div>
+  </form> 
+</div>
+<br>
+<br>
+<br>

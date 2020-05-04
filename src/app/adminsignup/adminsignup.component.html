@@ -1,0 +1,40 @@
+<div class="container col-lg-10 col-md-10 col-sm-10 offset-lg-1 offset-md-1 offset-sm-1">
+    <p class="headText">Register Your Self</p>
+  </div>
+  
+  <div class="col-lg-1 offset-lg-11 col-md-2 offset-md-8 col-sm-2 offset-sm-8"> 
+  <a href='adminlogin' style="text-decoration: none; font-size: 180%;">Back </a>
+  </div>
+  
+  <form class="container-fluid col-lg-10 col-">
+      <div class="form-row">
+        <div class="form-group col-md-6">
+          <label for="Name">Name</label>
+          <input type="text" class="form-control" placeholder="Name" name="Name" [(ngModel)]="Name"  required>
+        </div>
+  
+        <div class="form-group col-md-6">
+          <label for="Phone">Phone Number</label>
+          <input type="text" class="form-control" placeholder="Phone Number" name="Phone" [(ngModel)]="Phone" required>
+        </div>
+  
+        <div class="form-group col-md-6">
+          <label for="Password">Password</label>
+          <input type="password" class="form-control" placeholder="Password" name="Password" [(ngModel)]="Password" required>
+        </div>
+
+        <div class="form-group col-md-6">
+          <label for="ConfirmPassword">Confirm Password</label>
+          <input type="password" class="form-control" placeholder="Password" name="ConfirmPassword" [(ngModel)]="ConfirmPassword" required>
+        </div>
+
+        <div class="form-group col-md-12">
+            <label for="Email">Email Id</label>
+            <input type="email" class="form-control" placeholder="Email Id" name="Email" [(ngModel)]="Email" required>
+          </div>
+
+      <div class="container col-lg-10 col-sm-12 col-md-12 offset-lg-1 offset-sm-1 offset-md-1" style="padding-bottom: 10%;">
+      <button type="submit" (click)="adminSignUp()" class="btn btn-primary container offset-2">Register</button>
+    </div>
+    </div>
+    </form>

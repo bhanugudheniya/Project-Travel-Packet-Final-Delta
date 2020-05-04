@@ -1,0 +1,21 @@
+.subHead{
+    font-weight: bold;
+}
+
+.sendingHeading{
+    text-align: center;
+    font-family: 'Noto Sans KR', sans-serif;
+    color: rgb(250, 112, 0);
+  padding: 50px;
+  box-shadow: 0 8px 6px -6px #888888;
+  width: 100%;
+  font-weight: bold;
+}
+
+.formDiv{
+    padding-top: 3%;
+}
+
+.form-control{
+    border-radius: 100px;
+}
