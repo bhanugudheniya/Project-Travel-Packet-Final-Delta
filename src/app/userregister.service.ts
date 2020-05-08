@@ -59,7 +59,7 @@ export class UserregisterService {
         this.setjwt(res.token);
         console.log(res);
         alert('logged in');
-        window.location.href = "/userdashboard";
+        window.location.href = "/sending";
       }
     })
   }

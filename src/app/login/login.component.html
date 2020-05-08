@@ -18,7 +18,7 @@
                         <label for="exampleInputPassword1">Password:</label>
                         <input type="password" class="form-control form-control-sm" id="exampleInputPassword1" name="Password" [(ngModel)]="Password">
                     </div>
-                    <button type="submit" (click)="userLogin()" [disabled]="userForm.form.invalid"  class="glow-on-hover" [routerLink]="['/userlogindashboard']">Sign in</button>
+                    <button type="submit" (click)="userLogin()" [disabled]="userForm.form.invalid"  class="glow-on-hover">Sign in</button>
                     
                     <div class="sign-up" style="margin-top: 10px;font-size: 20px">
                         Don't have an account? <a href="signup" style="color:rgb(77, 39, 10);font-size: 20px;">Create One</a>

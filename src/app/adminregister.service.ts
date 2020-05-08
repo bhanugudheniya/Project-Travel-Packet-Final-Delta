@@ -59,7 +59,7 @@ export class AdminregisterService {
         this.setjwt(res.token);
         console.log(res);
         alert('logged in');
-        window.location.href = "/admindashboard";
+        window.location.href = "/adminplaceorder";
       }
     })
   }
