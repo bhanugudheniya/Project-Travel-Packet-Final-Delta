@@ -37,7 +37,25 @@ export class SendingComponent implements OnInit {
   }
 
   addData(){
-    this.us.addData(this.fromName,this.fromHouseNumber,this.fromArea,this.fromStreet,this.fromPinCode,this.fromEmail,this.fromPhoneNumber,this.toName,this.toHouseNumber,this.toArea,this.toStreet,this.toPinCode,this.toEmail,this.toPhoneNumber,this.itemName,this.itemSize,this.itemShape,this.itemWeight);
+    this.us.addData(this.fromName,
+      this.fromHouseNumber,
+      this.fromArea,
+      this.fromStreet,
+      this.fromPinCode,
+      this.fromEmail,
+      this.fromPhoneNumber,
+      this.toName,
+      this.toHouseNumber,
+      this.toArea,
+      this.toStreet,
+      this.toPinCode,
+      this.toEmail,
+      this.toPhoneNumber,
+      this.itemName,
+      this.itemSize,
+      this.itemShape,
+      this.itemWeight
+      );
     console.log(this.fromName)
   }
 
